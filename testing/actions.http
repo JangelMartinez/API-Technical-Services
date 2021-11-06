@@ -1,0 +1,41 @@
+
+### Visualizar un action
+GET http://127.0.0.1:3000/actions/get/5
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+### listar all actionsn
+GET http://127.0.0.1:3000/actions/get_list
+Content-Type: application/json
+token: 859e9f43c38f03f77b655caa907eb69df186ebb7
+
+### Add new accion
+POST http://127.0.0.1:3000/actions/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"ID_COMPANY" : 5,
+	"ID_CONTACT" : 7,
+	"type": "llamada",
+	"state": "pendiente",
+	"description": "es la descripción de la llamada"
+}
+
+### Edit accion
+POST http://127.0.0.1:3000/actions/edit/14
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"ID_COMPANY" : 5,
+	"ID_CONTACT" : 7,
+	"type": "llamada",
+	"state": "pendiente",
+	"description": "es la descripción de la llamada modif"
+}
+
+### Delete action
+POST http://127.0.0.1:3000/actions/delete/14
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a

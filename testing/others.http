@@ -1,0 +1,5 @@
+
+### Visualizar un action
+GET http://127.0.0.1:3000/others/home
+Content-Type: application/json
+token: 859e9f43c38f03f77b655caa907eb69df186ebb7

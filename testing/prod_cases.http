@@ -1,0 +1,42 @@
+
+### Visualizar un productos de una incidencia
+GET http://127.0.0.1:3000/prod_cases/get/4
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+### listar all prouctos de incidencia
+GET http://127.0.0.1:3000/prod_cases/get_list
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+### Add new producto de incidencia
+POST http://127.0.0.1:3000/prod_cases/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"ID_PROD": 6,
+    "ID_CASE": 4,
+    "product_date": "2021-09-30T22:00:00.000Z",
+    "error": "Error del producto",
+    "description": "Descripción del problema.",
+    "state": "quemado"
+}
+
+### Edit producto de incidencia
+POST http://127.0.0.1:3000/prod_cases/edit/6
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"ID_PROD": 6,
+    "ID_CASE": 4,
+    "error": "Error del producto",
+    "description": "Descripción del problema modif.",
+    "state": "quemado"
+}
+
+### Delete producto de incidencia
+POST http://127.0.0.1:3000/prod_cases/delete/6
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a

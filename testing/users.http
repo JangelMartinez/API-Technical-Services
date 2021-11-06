@@ -1,0 +1,46 @@
+### Login
+POST http://127.0.0.1:3000/users/login
+Content-Type: application/json
+
+{
+	"email" : "hola@test.com",
+	"password" : "123456"
+}
+
+### Listar user logged
+GET http://127.0.0.1:3000/users/get
+Content-Type: application/json
+token: dc26494f8941b7c4a8d09ca3762af61e59520943
+
+### listar all users
+GET http://127.0.0.1:3000/users/get_list
+Content-Type: application/json
+token: dc26494f8941b7c4a8d09ca3762af61e59520943
+
+### Add new user
+POST http://127.0.0.1:3000/users/add
+Content-Type: application/json
+
+{
+	"email" : "test3@test.es",
+	"password" : "123456",
+	"name": "test3",
+	"phone": "555444333"
+}
+
+### Edit user
+POST http://127.0.0.1:3000/users/edit
+Content-Type: application/json
+token: 913c05ea564532bcadc33c951a91731c0ef83460
+
+{
+	"email" : "test1@test.es",
+	"password" : "123456",
+	"name": "test mod",
+	"phone": "555444333"
+}
+
+### Delete user
+POST http://127.0.0.1:3000/users/delete
+Content-Type: application/json
+token: dc26494f8941b7c4a8d09ca3762af61e59520943

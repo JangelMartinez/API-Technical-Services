@@ -1,0 +1,37 @@
+
+### Visualizar un producto
+GET http://127.0.0.1:3000/products/get/2
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+### listar all prouctos
+GET http://127.0.0.1:3000/products/get_list
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+### Add new producto
+POST http://127.0.0.1:3000/products/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"code" : "codigo9",
+	"name" : "nom cod9",
+	"description": "descripción cod9"
+}
+
+### Edit producto
+POST http://127.0.0.1:3000/products/edit/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+{
+	"code" : "codigo3",
+	"name" : "nom cod3 modf",
+	"description": "descripción cod3"
+}
+
+### Delete producto
+POST http://127.0.0.1:3000/products/delete/2
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df

@@ -1,0 +1,45 @@
+
+### Listar company
+GET http://127.0.0.1:3000/company/get_list
+Content-Type: application/json
+token: 78a5094a4ceceb9accbd67f957728d685a9d05d9
+
+
+### AÑADIR EMPRESA
+POST http://127.0.0.1:3000/company/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+	{
+		"name": "Delegacion2",
+		"phone": "657123123",
+		"email": "del@delegacion2.com",
+		"type": "delegacion"
+	}
+
+### Visualizar una empresa
+GET http://127.0.0.1:3000/company/get/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+
+### Edit company
+POST http://127.0.0.1:3000/company/edit/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+{
+		"name": "Microsoft 2",
+		"phone": "657123123",
+		"email": "ms@microsoft.com",
+		"type": "cliente",
+		"address": "dirección 1",
+		"postal_code": "46980",
+		"locality": "Paterna",
+		"province": "Valencia"
+	}
+
+### Delete company
+POST http://127.0.0.1:3000/company/delete/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df

@@ -1,0 +1,43 @@
+
+### Visualizar un case
+GET http://127.0.0.1:3000/cases/get/3
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+### listar all cases
+GET http://127.0.0.1:3000/cases/get_list
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+### Add new cases
+POST http://127.0.0.1:3000/cases/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+      "ID_COMPANY": 6,
+      "ID_CONTACT": 9,
+      "purchase": "5566",
+      "description": "Descripción de la incidencia 2",
+      "cause": "programacion",
+      "state": "esp. cliente"
+}
+
+### Edit cases
+POST http://127.0.0.1:3000/cases/edit/5
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+      "ID_COMPANY": 6,
+      "ID_CONTACT": 9,
+      "purchase": "556677",
+      "description": "Descripción de la incidencia 2",
+      "cause": "programacion",
+      "state": "esp. cliente"
+}
+
+### Delete cases
+POST http://127.0.0.1:3000/cases/delete/5
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a

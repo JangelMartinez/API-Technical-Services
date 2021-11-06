@@ -1,0 +1,46 @@
+
+### Visualizar un contacto
+GET http://127.0.0.1:3000/contacts/get/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+### listar all contacts
+GET http://127.0.0.1:3000/contacts/get_list
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+### listar all contacts de una empresa
+GET http://127.0.0.1:3000/contacts/get_list/2
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+### Add new contact
+POST http://127.0.0.1:3000/contacts/add
+Content-Type: application/json
+token: 8bb3004dd5f43e08e11339a9f84accf08fa8070a
+
+{
+	"ID_COMPANY" : "7",
+	"name" : "Claudia",
+	"phone": "111222333",
+	"mail" : "marta@proveedor2.es",
+	"notes" : "notas contacto proveedor2"
+}
+
+### Edit contact
+POST http://127.0.0.1:3000/contacts/edit/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
+
+{
+	"ID_COMPANY" : "2",
+	"name" : "contacto 3 modf",
+	"phone": "111222333",
+	"mail" : "cont3@contact.es",
+	"notes" : "notas contacto 3"
+}
+
+### Delete contact
+POST http://127.0.0.1:3000/contacts/delete/3
+Content-Type: application/json
+token: 8eb981cee223ba536048d0ad337a7083ab8989df
