@@ -101,6 +101,11 @@ router.post("/edit/:id", authtoken, async (req, res)=>{
 		}
 	});
 
+	//console.log("update:",prepare_update);
+	if (prepare_update){
+		//console.log("entra en vacio");
+		return res.json({status : false});
+	}
 	const resultado = await db("users").where("ID", req.tokendata.ID).update(prepare_update);
 
 	console.log(resultado);
